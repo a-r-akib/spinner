@@ -169,7 +169,11 @@ export default function GiftSpinner() {
     winner?.name.toLowerCase().includes("nothing");
 
   return (
-    <div className="w-full px-4 py-8 relative overflow-hidden min-h-screen flex justify-center items-center bg-violet-50">
+<div className="w-full px-4 py-8 relative overflow-hidden min-h-screen bg-violet-50">
+
+<h1 className="text-5xl text-center capitalize font-black text-violet-800">Spin and win awesome Prizes</h1>
+    <div className=" flex justify-center items-center">
+      
       <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden">
         {confettiParticles.map((p) => (
           <div
@@ -445,6 +449,7 @@ export default function GiftSpinner() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }
